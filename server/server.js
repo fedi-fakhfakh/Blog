@@ -121,7 +121,7 @@ app.post('/api/createComment', async (req, res) => {
 });
 
 // Start the server
-const PORT = process.env.PORT || 7666 || 3000 || 2000 || 8000 || 5000 || 5050 || 1111;
+const PORT = process.env.PORT || 7666 
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
 });
