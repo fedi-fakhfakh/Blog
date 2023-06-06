@@ -39,8 +39,7 @@ router.post('/register', (req, res) => {
         // Save the user to the database
         newUser.save()
           .then(user => {
-            console.log(user);
-            res.json({ message: 'User registered successfully' })})
+            res.json({ message: 'User registered successfully', id: user.id });})
           .catch(err => {
             console.log(err);
             res.status(500).json({ message: 'Server error' });
